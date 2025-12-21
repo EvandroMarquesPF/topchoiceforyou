@@ -1,6 +1,7 @@
 [build]
-  command = "# no build command needed"
+  base = "."
   publish = "."
+  command = "echo 'Building Static Site'"
 
 [[headers]]
   for = "/*"
