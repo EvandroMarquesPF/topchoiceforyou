@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertising Disclaimer | TopChoiceForYou</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+    <nav class="border-b border-gray-100 py-6">
+        <div class="max-w-4xl mx-auto px-6">
+            <a href="../../index.html" class="flex items-center gap-2 text-xl font-bold">
+                <img src="../assets/logo.webp" alt="TopChoiceForYou Logo" class="h-8 w-8 object-contain">
+                <span>TopChoice<span class="text-blue-700">ForYou</span></span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        <h1 class="text-3xl font-bold mb-8">Advertising Disclaimer</h1>
+        <div class="prose prose-blue max-w-none text-gray-600 leading-relaxed space-y-6">
+            <p>Last Updated: December 21, 2025</p>
+            
+            <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+                <p class="text-red-700 font-bold uppercase text-xs tracking-widest mb-2">FDA DISCLAIMER</p>
+                <p class="text-red-700">
+                    These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary. The information provided on this site is for informational purposes only and is not intended as a substitute for advice from your physician.
+                </p>
+            </div>
+
+            <h2 class="text-xl font-bold text-gray-900 mt-8">Affiliate Disclosure</h2>
+            <p>
+                TopChoiceForYou.com is a participant in affiliate marketing programs. This means that we may receive a commission when you click on links to products and make a purchase. This compensation helps support our investigative research and editorial team.
+            </p>
+            
+            <p>
+                However, our reviews and investigations are based on our own independent analysis and research. We prioritize the integrity of our reports and only recommend products that we believe provide value to our readers.
+            </p>
+
+            <h2 class="text-xl font-bold text-gray-900 mt-8">Investigative Nature</h2>
+            <p>
+                This website is an advertisement and not a news publication. Any "Special Reports" or "Investigations" are editorial reviews based on publicly available data, clinical studies, and user feedback.
+            </p>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-100 py-12 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6 text-center text-xs text-gray-400">
+            <p>&copy; 2025 Top Choice For You. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 w-full bg-gray-900 text-white p-4 z-50 flex flex-col sm:flex-row justify-between items-center shadow-lg transform transition-transform duration-300 translate-y-full">
+        <p class="text-xs sm:text-sm mb-3 sm:mb-0 text-center sm:text-left pr-4 font-sans">
+            We use cookies to improve your experience. By continuing to visit this site you agree to our use of cookies.
+        </p>
+        <button onclick="acceptCookies()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-xs sm:text-sm font-bold transition-colors font-sans whitespace-nowrap">
+            Accept
+        </button>
+    </div>
+    <script>
+        function acceptCookies() {
+            document.getElementById('cookie-banner').classList.add('translate-y-full');
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+        window.onload = function() {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(function() {
+                    document.getElementById('cookie-banner').classList.remove('translate-y-full');
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+</html>
