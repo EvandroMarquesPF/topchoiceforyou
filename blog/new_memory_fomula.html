@@ -10,6 +10,21 @@
      
       gtag('config', 'AW-16799646775'); 
     </script>
+    <!-- Event snippet for Clique no Link conversion page -->
+    <script> 
+    function gtag_report_conversion(url) { 
+      var callback = function () { 
+        if (typeof(url) != 'undefined') { 
+          window.location = url; 
+        } 
+      }; 
+      gtag('event', 'conversion', { 
+          'send_to': 'AW-16799646775/15WVCP-ujuEbELeI2co-', 
+          'event_callback': callback 
+      }); 
+      return false; 
+    } 
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Support After 60: The "Nobel Prize" Science Connection | TopChoiceForYou</title>
@@ -279,7 +294,7 @@
                 <h2 class="text-2xl font-bold text-gray-900 mb-6 font-sans text-center">Our Final Verdict</h2>
                 <div class="bg-blue-600 text-white p-8 rounded-2xl shadow-xl">
                     <p class="text-lg leading-relaxed italic mb-0">
-                        "While slightly more expensive than generic brands, the inclusion of NeuroFactor™ and the specific focus on the NGF pathway makes <a href="https://www.advancedbionutritionals.com/DS24/Advanced-Memory/Nobel-Prize-Winning-Memory-Breakthroughs/HD.htm#aff=EvandroMqs" class="underline hover:text-blue-100 transition-colors">Advanced Memory Formula</a> the top pick for seniors serious about cognitive longevity and mental clarity."
+                        "While slightly more expensive than generic brands, the inclusion of NeuroFactor™ and the specific focus on the NGF pathway makes <a href="https://www.advancedbionutritionals.com/DS24/Advanced-Memory/Nobel-Prize-Winning-Memory-Breakthroughs/HD.htm#aff=EvandroMqs" onclick="return gtag_report_conversion('https://www.advancedbionutritionals.com/DS24/Advanced-Memory/Nobel-Prize-Winning-Memory-Breakthroughs/HD.htm#aff=EvandroMqs')" class="underline hover:text-blue-100 transition-colors">Advanced Memory Formula</a> the top pick for seniors serious about cognitive longevity and mental clarity."
                     </p>
                 </div>
             </div>
@@ -291,7 +306,7 @@
                 <p class="text-gray-600 mb-8 max-w-md mx-auto">
                     Due to high demand and the quality of ingredients, stock is often limited.
                 </p>
-                <a href="https://www.advancedbionutritionals.com/DS24/Advanced-Memory/Nobel-Prize-Winning-Memory-Breakthroughs/HD.htm#aff=EvandroMqs" class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-sans font-bold py-4 px-12 rounded-lg shadow-lg transition-all transform hover:-translate-y-1 uppercase tracking-wide">
+                <a href="https://www.advancedbionutritionals.com/DS24/Advanced-Memory/Nobel-Prize-Winning-Memory-Breakthroughs/HD.htm#aff=EvandroMqs" onclick="return gtag_report_conversion('https://www.advancedbionutritionals.com/DS24/Advanced-Memory/Nobel-Prize-Winning-Memory-Breakthroughs/HD.htm#aff=EvandroMqs')" class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-sans font-bold py-4 px-12 rounded-lg shadow-lg transition-all transform hover:-translate-y-1 uppercase tracking-wide">
                     Check Availability & Pricing
                 </a>
                 <p class="mt-4 text-sm font-bold text-red-600 font-sans">
